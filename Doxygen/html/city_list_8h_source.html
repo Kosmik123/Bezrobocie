@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bezrobocie: Plik źródłowy Bezrobocie/cityList.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bezrobocie
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c3a652b0b73fab411b4c334e4d524155.html">Bezrobocie</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cityList.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="city_list_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="city_8h.html">city.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_city_list.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_city_list.html">CityList</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_city_list.html#a7f2a7190a909510150705a1b1be9e101">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_city_list.html#a7f2a7190a909510150705a1b1be9e101">size</a>; </div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_city_list.html#ac1a011a48ce943c37ba9464f74670849">   12</a></span>&#160;    <a class="code" href="struct_city.html">City</a> * <a class="code" href="struct_city_list.html#ac1a011a48ce943c37ba9464f74670849">first</a>; </div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_city_list.html#a924d5ffe21353b51e6114d0eddaf3fed">   13</a></span>&#160;    <a class="code" href="struct_city.html">City</a> * <a class="code" href="struct_city_list.html#a924d5ffe21353b51e6114d0eddaf3fed">last</a>; </div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="struct_city.html">City</a> * <a class="code" href="struct_city_list.html#a9c1f021c9d6309a3151d35965019dbe3">findByName</a>(std::string name); </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="struct_city.html">City</a> * <a class="code" href="struct_city_list.html#a2c9311fdf240fe5faab78d50633d75f1">highestRate</a>(); </div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="struct_city.html">City</a> * <a class="code" href="struct_city_list.html#ac33c6ce8afc982eb2c69d3a258a303a7">lowestRate</a>(); </div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_city_list.html#a0c431be0c91c6b6b3d097118aa6c12fe">deleteSmallCities</a>(); </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_city_list.html#a81296a875ed31c453c8579fdb84d4be0">deleteCity</a>(<a class="code" href="struct_city.html">City</a> * m); </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_city_list.html#a6da84a7b2fadd94a3f361171beca61fd">addCity</a>(<a class="code" href="struct_city.html">City</a> *m); </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_city_list.html#a5d49c5c9885de03e75922be3936b4209">swap</a>(<a class="code" href="struct_city.html">City</a> *m1, <a class="code" href="struct_city.html">City</a> *m2); </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_city_list.html#a8d50de940f0f195ee7881fb6bed3e535">sortByRate</a>(); </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_city_list.html#a24e6389b175a63e25640ede4aed88021">transfer</a>(<span class="keywordtype">int</span> N); </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_city_list.html#ac6bb86bf8511ba6bfc124f0c905cb08b">empty</a>(); </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="ttc" id="city_8h_html"><div class="ttname"><a href="city_8h.html">city.h</a></div></div>
+<div class="ttc" id="struct_city_list_html"><div class="ttname"><a href="struct_city_list.html">CityList</a></div><div class="ttdef"><b>Definition:</b> cityList.h:9</div></div>
+<div class="ttc" id="struct_city_list_html_a9c1f021c9d6309a3151d35965019dbe3"><div class="ttname"><a href="struct_city_list.html#a9c1f021c9d6309a3151d35965019dbe3">CityList::findByName</a></div><div class="ttdeci">City * findByName(std::string name)</div><div class="ttdoc">Metoda zwracająca wskaźnik do miasta na podstawie nazwy.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:5</div></div>
+<div class="ttc" id="struct_city_list_html_a6da84a7b2fadd94a3f361171beca61fd"><div class="ttname"><a href="struct_city_list.html#a6da84a7b2fadd94a3f361171beca61fd">CityList::addCity</a></div><div class="ttdeci">void addCity(City *m)</div><div class="ttdoc">Metoda dodaje do listy miast.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:81</div></div>
+<div class="ttc" id="struct_city_list_html_a924d5ffe21353b51e6114d0eddaf3fed"><div class="ttname"><a href="struct_city_list.html#a924d5ffe21353b51e6114d0eddaf3fed">CityList::last</a></div><div class="ttdeci">City * last</div><div class="ttdoc">Wskaźnik do ostatniego miasta w liście.</div><div class="ttdef"><b>Definition:</b> cityList.h:13</div></div>
+<div class="ttc" id="struct_city_list_html_ac33c6ce8afc982eb2c69d3a258a303a7"><div class="ttname"><a href="struct_city_list.html#ac33c6ce8afc982eb2c69d3a258a303a7">CityList::lowestRate</a></div><div class="ttdeci">City * lowestRate()</div><div class="ttdoc">Metoda zwraca miasto o najmniejszej stopie bezrobocia.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:37</div></div>
+<div class="ttc" id="struct_city_list_html_a0c431be0c91c6b6b3d097118aa6c12fe"><div class="ttname"><a href="struct_city_list.html#a0c431be0c91c6b6b3d097118aa6c12fe">CityList::deleteSmallCities</a></div><div class="ttdeci">void deleteSmallCities()</div><div class="ttdoc">Metoda usuwa z listy miasta o liczbie mieszkańców mniejszej niż 1000.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:54</div></div>
+<div class="ttc" id="struct_city_list_html_ac6bb86bf8511ba6bfc124f0c905cb08b"><div class="ttname"><a href="struct_city_list.html#ac6bb86bf8511ba6bfc124f0c905cb08b">CityList::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdoc">Metoda sprawdza czy lista jest pusta.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:167</div></div>
+<div class="ttc" id="struct_city_html"><div class="ttname"><a href="struct_city.html">City</a></div><div class="ttdef"><b>Definition:</b> city.h:8</div></div>
+<div class="ttc" id="struct_city_list_html_a81296a875ed31c453c8579fdb84d4be0"><div class="ttname"><a href="struct_city_list.html#a81296a875ed31c453c8579fdb84d4be0">CityList::deleteCity</a></div><div class="ttdeci">void deleteCity(City *m)</div><div class="ttdoc">Metoda usuwa z listy miasto.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:65</div></div>
+<div class="ttc" id="struct_city_list_html_ac1a011a48ce943c37ba9464f74670849"><div class="ttname"><a href="struct_city_list.html#ac1a011a48ce943c37ba9464f74670849">CityList::first</a></div><div class="ttdeci">City * first</div><div class="ttdoc">Wskaźnik do pierwszego miasta w liście.</div><div class="ttdef"><b>Definition:</b> cityList.h:12</div></div>
+<div class="ttc" id="struct_city_list_html_a24e6389b175a63e25640ede4aed88021"><div class="ttname"><a href="struct_city_list.html#a24e6389b175a63e25640ede4aed88021">CityList::transfer</a></div><div class="ttdeci">void transfer(int N)</div><div class="ttdoc">Metoda przeprowadza przepływ osób między miastami.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:147</div></div>
+<div class="ttc" id="struct_city_list_html_a7f2a7190a909510150705a1b1be9e101"><div class="ttname"><a href="struct_city_list.html#a7f2a7190a909510150705a1b1be9e101">CityList::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">Ilość miast w liście.</div><div class="ttdef"><b>Definition:</b> cityList.h:11</div></div>
+<div class="ttc" id="struct_city_list_html_a8d50de940f0f195ee7881fb6bed3e535"><div class="ttname"><a href="struct_city_list.html#a8d50de940f0f195ee7881fb6bed3e535">CityList::sortByRate</a></div><div class="ttdeci">void sortByRate()</div><div class="ttdoc">Metoda sortuje miasta według stopy bezrobocia.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:133</div></div>
+<div class="ttc" id="struct_city_list_html_a2c9311fdf240fe5faab78d50633d75f1"><div class="ttname"><a href="struct_city_list.html#a2c9311fdf240fe5faab78d50633d75f1">CityList::highestRate</a></div><div class="ttdeci">City * highestRate()</div><div class="ttdoc">Metoda zwraca miasto o największej stopie bezrobocia.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:20</div></div>
+<div class="ttc" id="struct_city_list_html_a5d49c5c9885de03e75922be3936b4209"><div class="ttname"><a href="struct_city_list.html#a5d49c5c9885de03e75922be3936b4209">CityList::swap</a></div><div class="ttdeci">void swap(City *m1, City *m2)</div><div class="ttdoc">Metoda zamienia miejscami 2 miasta w liście.</div><div class="ttdef"><b>Definition:</b> cityList.cpp:98</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

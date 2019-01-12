@@ -1,0 +1,183 @@
+\hypertarget{struct_city_list}{}\section{Dokumentacja struktury City\+List}
+\label{struct_city_list}\index{CityList@{CityList}}
+
+
+{\ttfamily \#include $<$city\+List.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_list_a9c1f021c9d6309a3151d35965019dbe3}{find\+By\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca wskaźnik do miasta na podstawie nazwy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_list_a2c9311fdf240fe5faab78d50633d75f1}{highest\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca miasto o największej stopie bezrobocia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_list_ac33c6ce8afc982eb2c69d3a258a303a7}{lowest\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca miasto o najmniejszej stopie bezrobocia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_list_a0c431be0c91c6b6b3d097118aa6c12fe}{delete\+Small\+Cities}} ()
+\begin{DoxyCompactList}\small\item\em Metoda usuwa z listy miasta o liczbie mieszkańców mniejszej niż 1000. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_list_a81296a875ed31c453c8579fdb84d4be0}{delete\+City}} (\mbox{\hyperlink{struct_city}{City}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Metoda usuwa z listy miasto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_list_a6da84a7b2fadd94a3f361171beca61fd}{add\+City}} (\mbox{\hyperlink{struct_city}{City}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Metoda dodaje do listy miast. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_list_a5d49c5c9885de03e75922be3936b4209}{swap}} (\mbox{\hyperlink{struct_city}{City}} $\ast$m1, \mbox{\hyperlink{struct_city}{City}} $\ast$m2)
+\begin{DoxyCompactList}\small\item\em Metoda zamienia miejscami 2 miasta w liście. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_list_a8d50de940f0f195ee7881fb6bed3e535}{sort\+By\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Metoda sortuje miasta według stopy bezrobocia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_list_a24e6389b175a63e25640ede4aed88021}{transfer}} (int N)
+\begin{DoxyCompactList}\small\item\em Metoda przeprowadza przepływ osób między miastami. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_city_list_ac6bb86bf8511ba6bfc124f0c905cb08b}{empty}} ()
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy lista jest pusta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_city_list_a7f2a7190a909510150705a1b1be9e101}{size}}
+\begin{DoxyCompactList}\small\item\em Ilość miast w liście. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_list_ac1a011a48ce943c37ba9464f74670849}{first}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik do pierwszego miasta w liście. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_list_a924d5ffe21353b51e6114d0eddaf3fed}{last}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik do ostatniego miasta w liście. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Struktura reprezentująca listę miast Zawiera wskaźnik do pierwszego i ostatniego elementu listy oraz rozmiar listy. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{struct_city_list_a6da84a7b2fadd94a3f361171beca61fd}\label{struct_city_list_a6da84a7b2fadd94a3f361171beca61fd}} 
+\index{CityList@{CityList}!addCity@{addCity}}
+\index{addCity@{addCity}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{addCity()}{addCity()}}
+{\footnotesize\ttfamily void City\+List\+::add\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_city}{City}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Metoda dodaje do listy miast. 
+
+\mbox{\Hypertarget{struct_city_list_a81296a875ed31c453c8579fdb84d4be0}\label{struct_city_list_a81296a875ed31c453c8579fdb84d4be0}} 
+\index{CityList@{CityList}!deleteCity@{deleteCity}}
+\index{deleteCity@{deleteCity}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{deleteCity()}{deleteCity()}}
+{\footnotesize\ttfamily void City\+List\+::delete\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_city}{City}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Metoda usuwa z listy miasto. 
+
+\mbox{\Hypertarget{struct_city_list_a0c431be0c91c6b6b3d097118aa6c12fe}\label{struct_city_list_a0c431be0c91c6b6b3d097118aa6c12fe}} 
+\index{CityList@{CityList}!deleteSmallCities@{deleteSmallCities}}
+\index{deleteSmallCities@{deleteSmallCities}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{deleteSmallCities()}{deleteSmallCities()}}
+{\footnotesize\ttfamily void City\+List\+::delete\+Small\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda usuwa z listy miasta o liczbie mieszkańców mniejszej niż 1000. 
+
+\mbox{\Hypertarget{struct_city_list_ac6bb86bf8511ba6bfc124f0c905cb08b}\label{struct_city_list_ac6bb86bf8511ba6bfc124f0c905cb08b}} 
+\index{CityList@{CityList}!empty@{empty}}
+\index{empty@{empty}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool City\+List\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdza czy lista jest pusta. 
+
+\mbox{\Hypertarget{struct_city_list_a9c1f021c9d6309a3151d35965019dbe3}\label{struct_city_list_a9c1f021c9d6309a3151d35965019dbe3}} 
+\index{CityList@{CityList}!findByName@{findByName}}
+\index{findByName@{findByName}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{findByName()}{findByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}} $\ast$ City\+List\+::find\+By\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracająca wskaźnik do miasta na podstawie nazwy. 
+
+\mbox{\Hypertarget{struct_city_list_a2c9311fdf240fe5faab78d50633d75f1}\label{struct_city_list_a2c9311fdf240fe5faab78d50633d75f1}} 
+\index{CityList@{CityList}!highestRate@{highestRate}}
+\index{highestRate@{highestRate}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{highestRate()}{highestRate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}} $\ast$ City\+List\+::highest\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraca miasto o największej stopie bezrobocia. 
+
+\mbox{\Hypertarget{struct_city_list_ac33c6ce8afc982eb2c69d3a258a303a7}\label{struct_city_list_ac33c6ce8afc982eb2c69d3a258a303a7}} 
+\index{CityList@{CityList}!lowestRate@{lowestRate}}
+\index{lowestRate@{lowestRate}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{lowestRate()}{lowestRate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}} $\ast$ City\+List\+::lowest\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraca miasto o najmniejszej stopie bezrobocia. 
+
+\mbox{\Hypertarget{struct_city_list_a8d50de940f0f195ee7881fb6bed3e535}\label{struct_city_list_a8d50de940f0f195ee7881fb6bed3e535}} 
+\index{CityList@{CityList}!sortByRate@{sortByRate}}
+\index{sortByRate@{sortByRate}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{sortByRate()}{sortByRate()}}
+{\footnotesize\ttfamily void City\+List\+::sort\+By\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda sortuje miasta według stopy bezrobocia. 
+
+\mbox{\Hypertarget{struct_city_list_a5d49c5c9885de03e75922be3936b4209}\label{struct_city_list_a5d49c5c9885de03e75922be3936b4209}} 
+\index{CityList@{CityList}!swap@{swap}}
+\index{swap@{swap}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void City\+List\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_city}{City}} $\ast$}]{m1,  }\item[{\mbox{\hyperlink{struct_city}{City}} $\ast$}]{m2 }\end{DoxyParamCaption})}
+
+
+
+Metoda zamienia miejscami 2 miasta w liście. 
+
+\mbox{\Hypertarget{struct_city_list_a24e6389b175a63e25640ede4aed88021}\label{struct_city_list_a24e6389b175a63e25640ede4aed88021}} 
+\index{CityList@{CityList}!transfer@{transfer}}
+\index{transfer@{transfer}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{transfer()}{transfer()}}
+{\footnotesize\ttfamily void City\+List\+::transfer (\begin{DoxyParamCaption}\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Metoda przeprowadza przepływ osób między miastami. 
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{struct_city_list_ac1a011a48ce943c37ba9464f74670849}\label{struct_city_list_ac1a011a48ce943c37ba9464f74670849}} 
+\index{CityList@{CityList}!first@{first}}
+\index{first@{first}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}}$\ast$ City\+List\+::first}
+
+
+
+Wskaźnik do pierwszego miasta w liście. 
+
+\mbox{\Hypertarget{struct_city_list_a924d5ffe21353b51e6114d0eddaf3fed}\label{struct_city_list_a924d5ffe21353b51e6114d0eddaf3fed}} 
+\index{CityList@{CityList}!last@{last}}
+\index{last@{last}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}}$\ast$ City\+List\+::last}
+
+
+
+Wskaźnik do ostatniego miasta w liście. 
+
+\mbox{\Hypertarget{struct_city_list_a7f2a7190a909510150705a1b1be9e101}\label{struct_city_list_a7f2a7190a909510150705a1b1be9e101}} 
+\index{CityList@{CityList}!size@{size}}
+\index{size@{size}!CityList@{CityList}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int City\+List\+::size}
+
+
+
+Ilość miast w liście. 
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Bezrobocie/\mbox{\hyperlink{city_list_8h}{city\+List.\+h}}\item 
+Bezrobocie/\mbox{\hyperlink{city_list_8cpp}{city\+List.\+cpp}}\end{DoxyCompactItemize}

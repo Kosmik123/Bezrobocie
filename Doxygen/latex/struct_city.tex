@@ -1,0 +1,171 @@
+\hypertarget{struct_city}{}\section{Dokumentacja struktury City}
+\label{struct_city}\index{City@{City}}
+
+
+{\ttfamily \#include $<$city.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_city_a23e3ed6e989bf65632be337b7cc9ff54}{imigration}} (int count)
+\begin{DoxyCompactList}\small\item\em Metoda zmieniająca ilość mieszkańców. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_a939d6b83111469e8718bae03174db553}{development}} (int count)
+\begin{DoxyCompactList}\small\item\em Metoda zmieniająca ilość miejsc pracy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_city_ac656c752d19f2dff77197b6dd43f7900}{print}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ypisuje informacje na temat miasta. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_city_a1ea5842fbfa8225a02aea0ff4f8497fc}{unemployed}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca ilość niezatrudnionych mieszkańców. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_city_af88917f06685c5c0230af013234bf3b5}{employed}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca ilość zatrudnionych mieszkańców. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_city_afea8cd8800a8600fa54af37ac05bf177}{name}}
+\begin{DoxyCompactList}\small\item\em Nazwa miasta. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_city_ac801edc1fa726efe7fe245570e6b008c}{citizens\+Count}}
+\begin{DoxyCompactList}\small\item\em Ilość mieszkańców aktywnych zawodowo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_city_a6dcb0f31c0917f9be11c312098c62c23}{workplaces\+Count}}
+\begin{DoxyCompactList}\small\item\em Ilość miejsc. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_city_ac6c7ff9b807ec1fd8ed680ec16f90c57}{unemployment\+Rate}}
+\begin{DoxyCompactList}\small\item\em Stopa bezrobocia miasta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_city_aa5d51ba1e563c1e7d44e977f8a12fa6e}{rate\+Increased}}
+\begin{DoxyCompactList}\small\item\em Flaga ustawiana gdy stopa bezrobocia w mieście wzrośnie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_a4d954b2bf73bf0532a8b78ad760622b1}{next}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na następne miasto w liście. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_city}{City}} $\ast$ \mbox{\hyperlink{struct_city_a6cd07e161d5a616619176d3ace51ed5d}{previous}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na poprzednie miasto w liście. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Struktura reprezentująca miasto. Zawiera zarówno dane na temat miasta podane w pliku, jak i informacje o położeniu w liście miast. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{struct_city_a939d6b83111469e8718bae03174db553}\label{struct_city_a939d6b83111469e8718bae03174db553}} 
+\index{City@{City}!development@{development}}
+\index{development@{development}!City@{City}}
+\subsubsection{\texorpdfstring{development()}{development()}}
+{\footnotesize\ttfamily void City\+::development (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Metoda zmieniająca ilość miejsc pracy. 
+
+\mbox{\Hypertarget{struct_city_af88917f06685c5c0230af013234bf3b5}\label{struct_city_af88917f06685c5c0230af013234bf3b5}} 
+\index{City@{City}!employed@{employed}}
+\index{employed@{employed}!City@{City}}
+\subsubsection{\texorpdfstring{employed()}{employed()}}
+{\footnotesize\ttfamily int City\+::employed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraca ilość zatrudnionych mieszkańców. 
+
+\mbox{\Hypertarget{struct_city_a23e3ed6e989bf65632be337b7cc9ff54}\label{struct_city_a23e3ed6e989bf65632be337b7cc9ff54}} 
+\index{City@{City}!imigration@{imigration}}
+\index{imigration@{imigration}!City@{City}}
+\subsubsection{\texorpdfstring{imigration()}{imigration()}}
+{\footnotesize\ttfamily void City\+::imigration (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Metoda zmieniająca ilość mieszkańców. 
+
+\mbox{\Hypertarget{struct_city_ac656c752d19f2dff77197b6dd43f7900}\label{struct_city_ac656c752d19f2dff77197b6dd43f7900}} 
+\index{City@{City}!print@{print}}
+\index{print@{print}!City@{City}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void City\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda ypisuje informacje na temat miasta. 
+
+\mbox{\Hypertarget{struct_city_a1ea5842fbfa8225a02aea0ff4f8497fc}\label{struct_city_a1ea5842fbfa8225a02aea0ff4f8497fc}} 
+\index{City@{City}!unemployed@{unemployed}}
+\index{unemployed@{unemployed}!City@{City}}
+\subsubsection{\texorpdfstring{unemployed()}{unemployed()}}
+{\footnotesize\ttfamily int City\+::unemployed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraca ilość niezatrudnionych mieszkańców. 
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{struct_city_ac801edc1fa726efe7fe245570e6b008c}\label{struct_city_ac801edc1fa726efe7fe245570e6b008c}} 
+\index{City@{City}!citizensCount@{citizensCount}}
+\index{citizensCount@{citizensCount}!City@{City}}
+\subsubsection{\texorpdfstring{citizensCount}{citizensCount}}
+{\footnotesize\ttfamily int City\+::citizens\+Count}
+
+
+
+Ilość mieszkańców aktywnych zawodowo. 
+
+\mbox{\Hypertarget{struct_city_afea8cd8800a8600fa54af37ac05bf177}\label{struct_city_afea8cd8800a8600fa54af37ac05bf177}} 
+\index{City@{City}!name@{name}}
+\index{name@{name}!City@{City}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string City\+::name}
+
+
+
+Nazwa miasta. 
+
+\mbox{\Hypertarget{struct_city_a4d954b2bf73bf0532a8b78ad760622b1}\label{struct_city_a4d954b2bf73bf0532a8b78ad760622b1}} 
+\index{City@{City}!next@{next}}
+\index{next@{next}!City@{City}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}}$\ast$ City\+::next}
+
+
+
+Wskaźnik na następne miasto w liście. 
+
+\mbox{\Hypertarget{struct_city_a6cd07e161d5a616619176d3ace51ed5d}\label{struct_city_a6cd07e161d5a616619176d3ace51ed5d}} 
+\index{City@{City}!previous@{previous}}
+\index{previous@{previous}!City@{City}}
+\subsubsection{\texorpdfstring{previous}{previous}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_city}{City}}$\ast$ City\+::previous}
+
+
+
+Wskaźnik na poprzednie miasto w liście. 
+
+\mbox{\Hypertarget{struct_city_aa5d51ba1e563c1e7d44e977f8a12fa6e}\label{struct_city_aa5d51ba1e563c1e7d44e977f8a12fa6e}} 
+\index{City@{City}!rateIncreased@{rateIncreased}}
+\index{rateIncreased@{rateIncreased}!City@{City}}
+\subsubsection{\texorpdfstring{rateIncreased}{rateIncreased}}
+{\footnotesize\ttfamily bool City\+::rate\+Increased}
+
+
+
+Flaga ustawiana gdy stopa bezrobocia w mieście wzrośnie. 
+
+\mbox{\Hypertarget{struct_city_ac6c7ff9b807ec1fd8ed680ec16f90c57}\label{struct_city_ac6c7ff9b807ec1fd8ed680ec16f90c57}} 
+\index{City@{City}!unemploymentRate@{unemploymentRate}}
+\index{unemploymentRate@{unemploymentRate}!City@{City}}
+\subsubsection{\texorpdfstring{unemploymentRate}{unemploymentRate}}
+{\footnotesize\ttfamily float City\+::unemployment\+Rate}
+
+
+
+Stopa bezrobocia miasta. 
+
+\mbox{\Hypertarget{struct_city_a6dcb0f31c0917f9be11c312098c62c23}\label{struct_city_a6dcb0f31c0917f9be11c312098c62c23}} 
+\index{City@{City}!workplacesCount@{workplacesCount}}
+\index{workplacesCount@{workplacesCount}!City@{City}}
+\subsubsection{\texorpdfstring{workplacesCount}{workplacesCount}}
+{\footnotesize\ttfamily int City\+::workplaces\+Count}
+
+
+
+Ilość miejsc. 
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Bezrobocie/\mbox{\hyperlink{city_8h}{city.\+h}}\item 
+Bezrobocie/\mbox{\hyperlink{city_8cpp}{city.\+cpp}}\end{DoxyCompactItemize}
