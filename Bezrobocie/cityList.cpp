@@ -16,6 +16,17 @@ City * CityList::findByName(std::string name)
     return result;
 }
 
+City * CityList::findById(int id)
+{
+    if (id >= size) return NULL;
+ 
+    City * result = first;
+
+    for (int i = 0; i < id; i++)
+        result = result->next;
+
+    return result;
+}
 
 City * CityList::highestRate()
 {
@@ -40,7 +51,6 @@ City * CityList::lowestRate()
     float rate = result->unemploymentRate;
     for (City * i = result->next; i != nullptr; i = i->next)
     {
-        //std::cout << "Checking " << i << " " << i->name << std::endl;
         if (i->unemploymentRate < rate)
         {
             rate = i->unemploymentRate;
@@ -97,14 +107,22 @@ void CityList::addCity(City *m)
 
 void CityList::swap(City *m1, City *m2)
 {
-    City *m1n, *m1p, *temp;
+    City temp = { m1->name, m1->citizensCount, m1->workplacesCount, m1->unemploymentRate, m1->rateIncreased };
+
+    m1->name = m2->name;
+    m1->citizensCount = m2->citizensCount;
+    m1->workplacesCount = m2->workplacesCount;
+    m1->unemploymentRate = m2->unemploymentRate;
+    m1->rateIncreased = m2->rateIncreased;
+
+    m2->name = temp.name;
+    m2->citizensCount = temp.citizensCount;
+    m2->workplacesCount = temp.workplacesCount;
+    m2->unemploymentRate = temp.unemploymentRate;
+    m2->rateIncreased = temp.rateIncreased;
 
     /*
-    std::cout << "m1 to " << m1->name << std::endl;
-    std::cout << "first to " << first->name << std::endl;
-    std::cout << "m2 to " << m2->name << std::endl;
-    std::cout << "last to " << last->name << std::endl;
-    */
+    City *m1n, *m1p, *temp;
 
     if (m1 != last)  m1->next->previous = m2;
     if (m1 != first) m1->previous->next = m2;
@@ -128,20 +146,39 @@ void CityList::swap(City *m1, City *m2)
     m1->previous = m2->previous;
     m2->next = m1n;
     m2->previous = m1p;
+    */
 }
 
 void CityList::sortByRate()
 {
+    City *one;
+    for (int i=0; i<size; i++)
+    {
+        one = findById(i);
+        City *two;
+        for (int j = 0; j<size; j++)
+        {
+            two = findById(j);
+            if (two->unemploymentRate > one->unemploymentRate)
+            {
+                //std::cout << "Zamiana " << one->name << " z " << two->name << std::endl;
+                swap(one, two);
+            }
+        }
+    }
+
+    /*
     for (City *one = first; one != nullptr; one = one->next)
     {
         for (City *two = one->next; two != nullptr; two = two->next)
         {
             if (two->unemploymentRate < one->unemploymentRate)
             {
+                std::cout << "Zamiana " << one->name << " z " << two->name << std::endl; 
                 swap(one, two);
             }
         }
-    }
+    }*/
 }
 
 void CityList::transfer(int N)

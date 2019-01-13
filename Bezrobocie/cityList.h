@@ -14,6 +14,7 @@ struct CityList
 
 
     City * findByName(std::string name); //!< Metoda zwracająca wskaźnik do miasta na podstawie nazwy
+    City * findById(int id); //!< Metoda zwracająca wskaźnik do miasta na podstawie numeru w liście
     City * highestRate(); //!< Metoda zwraca miasto o największej stopie bezrobocia
     City * lowestRate(); //!< Metoda zwraca miasto o najmniejszej stopie bezrobocia
 
